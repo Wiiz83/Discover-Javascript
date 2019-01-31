@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+        <title>JQuery et les Formulaires 02 : validation</title>
+        
+       	<script src="http://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js" type="text/javascript"></script>                      
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.css" />
+        
+        <script src="./javascript/lib/jquery.markitup/jquery.markitup.js" type="text/javascript"></script>
+        <script src="./javascript/lib/jquery.markitup/sets/default/set.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="./javascript/lib/jquery.markitup/skins/simple/style.css" />        
+        <link rel="stylesheet" type="text/css" href="./javascript/lib/jquery.markitup/sets/default/style.css" />
+        
+        <script src="./javascript/02_formulaire.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/formulaire.css" />          
+    </head>
+    <body>
+        <div id="contenu">
+			<form method="post" action="toto.php" id="form2" class="formulaire">
+        		<fieldset class="ui-widget ui-widget-content ui-corner-all">
+        			<legend>Vos informations</legend>
+					<p>
+						<label for="login">Login (obligatoire, au moins 6 caracteres)</label>
+						<input id="login" name="login" />
+					</p>
+					<p>
+						<label for="email">Email (obligatoire)</label>
+						<input id="email" name="email" />
+					</p>
+					<p>
+						<label for="url">Url (obligatoire)</label>
+						<input id="url" name="url" value="http://" />
+					</p>
+					<p>
+						<label for="date">Date de naissance (obligatoire)</label>
+						<input id="date" name="date" />
+					</p>
+					<p>
+						<label for="remarques">Remarques (non obligatoire)</label>
+						<textarea id="remarques" name="remarques" cols="20" rows="3"></textarea>
+					</p>					
+					<p>
+						<label for="agree">J'accepte les conditions d'utilisation</label>
+						<input type="checkbox" id="agree" name="agree" />
+					</p>
+					<p class="center">
+						<button class="submit" type="submit" >Submit</button>
+					</p>					
+        		</fieldset>       
+        	</form>
+        </div>
+    </body>
+</html>

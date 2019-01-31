@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercice sur la validation de formulaire</title>
+		<script src="./javascript/lib/jquery/jquery.min.js"></script>
+		
+		<script src="./javascript/lib/jquery.validate/jquery.validate.js" type="text/javascript"></script>
+        		
+		<script type="text/javascript" src="./javascript/formulaire2.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/formulaire2.css" />
+	</head>
+	<body>
+		<div id="contenu">
+			<h1 id="logo">Exercice sur la validation de formulaire</h1>
+			<form method="post" action="GET" class="formulaire" id="form2">
+				<fieldset id="fieldset1">		
+					<legend>Donn&eacute;es Personnelles</legend>
+					<table>
+						<tr>
+							<td><label for="name">Nom</label><span class="req"> *</span></td>
+							<td><input type="text" name="name" id="name" /></td>
+						</tr>
+						<tr>
+							<td><label for="adresse">Adresse</label><span class="req"> *</span></td>
+							<td><input type="text" name="adresse" id="adresse"/></td>
+						</tr>
+						<tr>
+							<td><label for="cp">Code Postal (5 chiffres)</label><span class="req"> *</span></td>
+							<td><input type="text" name="cp" id="cp" /></td>
+						</tr>
+						<tr>
+							<td><label for="naissance">Date de naissance</label><span class="req"> *</span></td>
+							<td><input type="text" name="naissance" id="naissance" /></td>
+						</tr>
+						<tr>
+							<td><label for="website">Site web</label><span class="req"> *</span></td>
+							<td><input type="text" name="website" id="website" /></td>
+						</tr>						
+					</table>
+				</fieldset>
+				<fieldset id="fieldset2">
+					<legend>Préférences</legend>
+					<table>
+						<tr>
+							<td><label for="preferences">Pr&eacute;f&eacute;rences pour le repas</label><span class="req"> *</span></td>
+							<td>
+								<input type="radio" name="preferences" value="1"/>Normal
+								<input type="radio" name="preferences" value="2"/>V&eacute;g&eacute;tarien
+							</td>
+						</tr>					
+					</table>
+				</fieldset>
+				<fieldset class="button">
+					<table>
+						<tr>
+							<td><input type="submit" value="Confirmer" /></td>
+							<td><input type="submit" value="Annuler" /></td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</div>		
+	</body>
+</html>

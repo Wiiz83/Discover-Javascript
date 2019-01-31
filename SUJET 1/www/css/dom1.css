@@ -1,0 +1,19 @@
+div#mesImages ul {
+	list-style: none;
+}
+
+div#mesImages ul li {
+	float: left;
+}
+
+div#mesImages ul li a {
+	display: block;
+	padding: 10px;
+}
+
+p#viewer {
+	clear: both;
+	text-align: center;
+}
+
+

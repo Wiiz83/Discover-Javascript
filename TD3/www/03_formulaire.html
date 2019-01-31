@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JQuery et les Formulaires 03 : validation</title>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"
+	type="text/javascript"></script>
+<script
+	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"
+	type="text/javascript"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"
+	type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.css" />
+
+<script
+	src="./javascript/lib/jquery.multiselect/jquery.multiselect.min.js"
+	type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="./javascript/lib/jquery.multiselect/jquery.multiselect.css" />
+
+<script src="./javascript/03_formulaire.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="./css/formulaire.css" />
+</head>
+<body>
+	<div id="contenu">
+		<form method="post" action="toto.php" id="form3" class="formulaire">
+			<fieldset class="ui-widget ui-widget-content ui-corner-all">
+				<legend>Vos informations</legend>
+				<p>
+					<label for="pays"><a class="tips" href="#"
+						title="Précisez votre pays de naissance.">Nationalit&eacute;
+							(obligatoire)</a></label> <select name="pays" id="pays" multiple="multiple">
+						<option value="pays1">France</option>
+						<option value="pays2">Br&eacute;sil</option>
+						<option value="pays3">Bretagne</option>
+					</select>
+				</p>
+				<p>
+					<label for="matieres"><a class="tips" href="#"
+						title="Vos devez choisir 2 centres d'interets parmi la liste proposée">Vos
+							centres d'inter&ecirc;ts (2 choix obligatoires)</a></label> <select
+						name="matieres[]" id="matieres" multiple="multiple">
+						<optgroup label="Communication">
+							<option value="mat1">TIC</option>
+							<option value="mat2">Gestion de projets</option>
+							<option value="mat3">Esthétisme</option>
+						</optgroup>
+						<optgroup label="Techno">
+							<option value="mat4">Infographie</option>
+							<option value="mat5">Webdesign</option>
+							<option value="mat6">Programmation</option>
+							<option value="mat7">Base de données</option>
+							<option value="mat8">Réseaux</option>
+						</optgroup>
+					</select>
+				</p>
+				<p class="center">
+					<button class="submit" type="submit">Submit</button>
+				</p>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

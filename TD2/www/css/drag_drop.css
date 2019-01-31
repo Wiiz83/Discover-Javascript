@@ -1,0 +1,36 @@
+
+div#main {
+	width: 800px;
+	height: 600px;
+	background-color: #FAF9CF;
+	margin: 10px auto;
+	position : relative;
+	
+}
+
+div.draggable {
+	width : 200px;
+	height: 100px;
+    background-color: #E0F0FF;
+    z-index: 2;
+}
+
+div#d1 {
+	float : left;
+}
+
+div#d2 {
+	float : right;
+}
+
+div#d3 {
+	width : 400px;
+	height: 200px;
+	position : absolute;
+	bottom : 0;
+	right : 0;
+}
+
+.colorDropped {
+	color: #B24926 !important;
+}
